@@ -3,25 +3,26 @@
     <div id="nav">
       <div class="nav_container">
         <div class="leftSide">
-          <div class="logo">
+          <div class="logo" onclick="location.href = '/'">
             DROP.
           </div>
           <div class="nav_wrapper">
-            <div class="socials"><router-link to="/about" class="routerLink"><i class="fas fa-shopping-cart"/></router-link></div>
+            <div class="socials"><router-link to="/about" class="routerLink"></router-link></div>
+            <div class="socials"><router-link to="/product" class="routerLink"><i class="fas fa-shopping-cart"/></router-link></div>
             <div class="socials"><router-link to="/" class="routerLink"><i class="fas fa-home"/></router-link></div>
           </div>
         </div>
         <div class="icons">
           <div class="socials_container">
-            <div class="socials"><i class="fab fa-instagram"></i></div>
-            <div class="socials"><i class="fab fa-facebook"></i></div>
-            <div class="socials"><i class="fab fa-youtube"></i></div>
+            <div class="socials"><i class="fab fa-instagram" onclick="window.location.href='https://www.instagram.com'"></i></div>
+            <div class="socials"><i class="fab fa-facebook" onclick="window.location.href='https://www.facebook.com'"></i></div>
+            <div class="socials"><i class="fab fa-youtube" onclick="window.location.href='https://www.youtube.com'"></i></div>
           </div>
 
         </div>
       </div>
       <div class="logo_bar">
-        <img src="./assets/72122682_483140439206927_1006645943686135808_n.png" height="250" >
+        <img class="imglogo" src="./assets/72122682_483140439206927_1006645943686135808_n.png" height="250" >
       </div>
     </div>
     <router-view/>
@@ -80,6 +81,7 @@ export default {
   .logo{
     display: flex;
     align-items: center;
+
   }
   .icons{
     width: 50%;
@@ -99,11 +101,18 @@ export default {
     justify-content: space-evenly;
     align-items: center;
   }
-  .socials:hover{
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+  .socials:hover {
+    transform: skewY(25deg);
   }
+  .logo:hover {
+    transform: rotate3d(1, 1, 1, 17deg);
+    transition-duration: 1.3s;
+  }
+  .imglogo:hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+  }
+
   .socials_container{
     width: 200px;
     height: 60px;

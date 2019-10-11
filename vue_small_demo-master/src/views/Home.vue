@@ -7,7 +7,7 @@
             <v-col id="maincol" >
               <v-row id="maintop">
 
-                <v-carousel>
+                <v-carousel height="800px" id="carousel">
                   <v-carousel-item
                           v-for="(item,i) in items"
                           :key="i"
@@ -23,7 +23,7 @@
                 </v-col>
               </v-row>
               <v-row id="mainbot">
-                <v-col cols="12" md="4"><v-hover
+                <v-col cols="12" md="4"><v-hover id="hover1"
                         v-slot:default="{ hover }"
                         :open-delay="openDelay"
                         :close-delay="closeDelay"
@@ -31,6 +31,141 @@
                         :value="value"
                 >
                   <v-card id="vcard1"
+                          :elevation="hover ? 12 : 2"
+                          height="750"
+                          class="mx-auto"
+                          max-width="600px"
+                          onclick="location.href = '/about'"
+                  >
+
+
+                    <v-img
+                            class="black--text"
+                            height="600px"
+                            src="../assets/1.jpg"
+                    >
+                      <v-card-title class="align-end fill-height"></v-card-title>
+                    </v-img>
+
+                    <v-card-text>
+                      <span>Price: Money</span><br>
+                      <span class="text--primary">
+                    <span>Good for rain!</span><br>
+                    <span>Timeless design assures absolute satisfaction</span>
+                  </span>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-btn
+                              text
+                              color="black"
+                      >
+                        Add to Cart
+                      </v-btn>
+                      <v-btn
+                              text
+                              color="black"
+                      >
+                        Buy Now
+                      </v-btn></v-card-actions></v-card></v-hover></v-col>
+                <v-col cols="12" md="4"><v-hover id="hover2"
+                        v-slot:default="{ hover }"
+                        :open-delay="openDelay"
+                        :close-delay="closeDelay"
+                        :disabled="disabled"
+                        :value="value"
+                >
+                  <v-card id="vcard2"
+                          :elevation="hover ? 12 : 2"
+                          height="750"
+                          class="mx-auto"
+                          max-width="600px"
+                          onclick="location.href = '/about2'"
+                  >
+
+
+                    <v-img
+                            class="black--text"
+                            height="600px"
+                            src="../assets/2.jpg"
+                    >
+                      <v-card-title class="align-end fill-height"></v-card-title>
+                    </v-img>
+
+                    <v-card-text>
+                      <span>Price: Money</span><br>
+                      <span class="text--primary">
+                    <span>Good for rain!</span><br>
+                    <span>Timeless design assures absolute satisfaction</span>
+                  </span>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-btn
+                              text
+                              color="black"
+                      >
+                        Add to Cart
+                      </v-btn>
+                      <v-btn
+                              text
+                              color="black"
+                      >
+                        Buy Now
+                      </v-btn></v-card-actions></v-card></v-hover></v-col>
+                <v-col cols="12" md="4"><v-hover id="hover3"
+                        v-slot:default="{ hover }"
+                        :open-delay="openDelay"
+                        :close-delay="closeDelay"
+                        :disabled="disabled"
+                        :value="value"
+                >
+                  <v-card id="vcard3"
+                          :elevation="hover ? 12 : 2"
+                          height="750"
+                          class="mx-auto"
+                          max-width="600px"
+                          onclick="location.href = '/about3'"
+                  >
+
+
+                    <v-img
+                            class="black--text"
+                            height="600px"
+                            src="../assets/3.jpg"
+                    >
+                      <v-card-title class="align-end fill-height"></v-card-title>
+                    </v-img>
+
+                    <v-card-text>
+                      <span>Price: Money</span><br>
+                      <span class="text--primary">
+                    <span>Good for rain!</span><br>
+                    <span>Timeless design assures absolute satisfaction</span>
+                  </span>
+                    </v-card-text>
+
+                    <v-card-actions>
+                      <v-btn
+                              text
+                              color="black"
+                      >
+                        Add to Cart
+                      </v-btn>
+                      <v-btn
+                              text
+                              color="black"
+                      >
+                        Buy Now
+                      </v-btn></v-card-actions></v-card></v-hover></v-col>
+                <!--v-col cols="12" md="4"><v-hover id="hover4"
+                        v-slot:default="{ hover }"
+                        :open-delay="openDelay"
+                        :close-delay="closeDelay"
+                        :disabled="disabled"
+                        :value="value"
+                >
+                  <v-card id="vcard4"
                           :elevation="hover ? 12 : 2"
                           height="550"
                           class="mx-auto"
@@ -67,14 +202,14 @@
                       >
                         Buy Now
                       </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover
+                <v-col cols="12" md="4"><v-hover id="hover5"
                         v-slot:default="{ hover }"
                         :open-delay="openDelay"
                         :close-delay="closeDelay"
                         :disabled="disabled"
                         :value="value"
                 >
-                  <v-card id="vcard1"
+                  <v-card id="vcard5"
                           :elevation="hover ? 12 : 2"
                           height="550"
                           class="mx-auto"
@@ -111,14 +246,14 @@
                       >
                         Buy Now
                       </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover
+                <v-col cols="12" md="4"><v-hover id="hover6"
                         v-slot:default="{ hover }"
                         :open-delay="openDelay"
                         :close-delay="closeDelay"
                         :disabled="disabled"
                         :value="value"
                 >
-                  <v-card id="vcard1"
+                  <v-card id="vcard6"
                           :elevation="hover ? 12 : 2"
                           height="550"
                           class="mx-auto"
@@ -154,149 +289,38 @@
                               color="black"
                       >
                         Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover
-                        v-slot:default="{ hover }"
-                        :open-delay="openDelay"
-                        :close-delay="closeDelay"
-                        :disabled="disabled"
-                        :value="value"
+                      </v-btn></v-card-actions></v-card></v-hover></v-col!-->
+              </v-row>
+              <v-row>
+                <v-hover id="hovervid"
+                         v-slot:default="{ hover }"
+                         :open-delay="openDelay"
+                         :close-delay="closeDelay"
+                         :disabled="disabled"
+                         :value="value"
                 >
-                  <v-card id="vcard1"
-                          :elevation="hover ? 12 : 2"
-                          height="550"
-                          class="mx-auto"
-                          max-width="600px"
-                  >
-
-
-                    <v-img
-                            class="black--text"
-                            height="400px"
-                            src="https://cdn.shopify.com/s/files/1/0727/4975/products/Big_Umbrella_LifeTek_Hillcrest_Golf_Umbrella_2048x.jpg?v=1520618406"
-                    >
-                      <v-card-title class="align-end fill-height">Umbrella</v-card-title>
-                    </v-img>
-
-                    <v-card-text>
-                      <span>Price: Money</span><br>
-                      <span class="text--primary">
-                    <span>Good for rain!</span><br>
-                    <span>Timeless design assures absolute satisfaction</span>
-                  </span>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Add to Cart
-                      </v-btn>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover
-                        v-slot:default="{ hover }"
-                        :open-delay="openDelay"
-                        :close-delay="closeDelay"
-                        :disabled="disabled"
-                        :value="value"
-                >
-                  <v-card id="vcard1"
-                          :elevation="hover ? 12 : 2"
-                          height="550"
-                          class="mx-auto"
-                          max-width="600px"
-                  >
-
-
-                    <v-img
-                            class="black--text"
-                            height="400px"
-                            src="https://cdn.shopify.com/s/files/1/0727/4975/products/Big_Umbrella_LifeTek_Hillcrest_Golf_Umbrella_2048x.jpg?v=1520618406"
-                    >
-                      <v-card-title class="align-end fill-height">Umbrella</v-card-title>
-                    </v-img>
-
-                    <v-card-text>
-                      <span>Price: Money</span><br>
-                      <span class="text--primary">
-                    <span>Good for rain!</span><br>
-                    <span>Timeless design assures absolute satisfaction</span>
-                  </span>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Add to Cart
-                      </v-btn>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover
-                        v-slot:default="{ hover }"
-                        :open-delay="openDelay"
-                        :close-delay="closeDelay"
-                        :disabled="disabled"
-                        :value="value"
-                >
-                  <v-card id="vcard1"
-                          :elevation="hover ? 12 : 2"
-                          height="550"
-                          class="mx-auto"
-                          max-width="600px"
-                  >
-
-
-                    <v-img
-                            class="black--text"
-                            height="400px"
-                            src="https://cdn.shopify.com/s/files/1/0727/4975/products/Big_Umbrella_LifeTek_Hillcrest_Golf_Umbrella_2048x.jpg?v=1520618406"
-                    >
-                      <v-card-title class="align-end fill-height">Umbrella</v-card-title>
-                    </v-img>
-
-                    <v-card-text>
-                      <span>Price: Money</span><br>
-                      <span class="text--primary">
-                    <span>Good for rain!</span><br>
-                    <span>Timeless design assures absolute satisfaction</span>
-                  </span>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Add to Cart
-                      </v-btn>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col>
+                <iframe width="1280" height="720" id="video"
+                        :elevation="hover ? 12 : 2"
+                        src="https://www.youtube.com/embed/CvBfHwUxHIk">
+                </iframe></v-hover>
               </v-row>
 
             <v-row id="footer">
-              <v-card
+              <v-col><br>
+                <strong><b>Contact Us</b></strong>
+                <br>Phone: XX XX XX XX<br>
+                Fax: XX XX XX XX<br>
+
+              </v-col>
+              <v-col><v-card
               width="100%"
               class="black lighten-1 text-center">
                 <v-card-text class="white--text">
-                  {{ new Date().getFullYear() }} — <strong>Umbrella</strong>
+                  {{ new Date().getFullYear() }} — <strong><i>DROP</i></strong>
                 </v-card-text>
-              </v-card>
+              </v-card></v-col>
+              <v-col><i><br>Umbrella DROP is a registered trademark.
+                <br>All rights reserved.</i></v-col>
             </v-row>
             </v-col>
 
@@ -334,10 +358,46 @@
   body, html{
   background: gray;
   }
+  #hovervid{
+    opacity: 0.9;
+    transition: 0.3s;
+    margin: 0 auto;
+    margin-bottom: 300px;
+  }
+  #hovervid:hover {opacity: 1}
+
+  #video{
+    margin: 0 auto;
+    margin-bottom: 400px;
+  }
+  #footer {
+    background-color: black;
+    color: white;
+    height: 125px;
+  }
   #vcon {
-    background-color:
+    padding: 0px;
 
   }
+  #maincol {
+    padding: 0px;
+  }
+    #carousel {
+    border: black solid;
+    border-width: 2px;
+    }
+
+  #hover1, #hover2, #hover3, #hover4, #hover5, #hover6 {
+      opacity: 0.9;
+      transition: 0.3s;
+  }
+
+  #hover1:hover {opacity: 1}
+  #hover2:hover {opacity: 1}
+  #hover3:hover {opacity: 1}
+  #hover4:hover {opacity: 1}
+  #hover5:hover {opacity: 1}
+  #hover6:hover {opacity: 1}
 
   #app {
       background-image: url("../assets/backgroundblack.jpg");
@@ -351,6 +411,7 @@
   }
   #mainbot {
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 </style>
 
