@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NavBar/>
     <v-app>
       <v-content>
         <v-container id="vcon" fluid>
@@ -158,138 +159,6 @@
                       >
                         Buy Now
                       </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <!--v-col cols="12" md="4"><v-hover id="hover4"
-                        v-slot:default="{ hover }"
-                        :open-delay="openDelay"
-                        :close-delay="closeDelay"
-                        :disabled="disabled"
-                        :value="value"
-                >
-                  <v-card id="vcard4"
-                          :elevation="hover ? 12 : 2"
-                          height="550"
-                          class="mx-auto"
-                          max-width="600px"
-                  >
-
-
-                    <v-img
-                            class="black--text"
-                            height="400px"
-                            src="https://cdn.shopify.com/s/files/1/0727/4975/products/Big_Umbrella_LifeTek_Hillcrest_Golf_Umbrella_2048x.jpg?v=1520618406"
-                    >
-                      <v-card-title class="align-end fill-height">Umbrella</v-card-title>
-                    </v-img>
-
-                    <v-card-text>
-                      <span>Price: Money</span><br>
-                      <span class="text--primary">
-                    <span>Good for rain!</span><br>
-                    <span>Timeless design assures absolute satisfaction</span>
-                  </span>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Add to Cart
-                      </v-btn>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover id="hover5"
-                        v-slot:default="{ hover }"
-                        :open-delay="openDelay"
-                        :close-delay="closeDelay"
-                        :disabled="disabled"
-                        :value="value"
-                >
-                  <v-card id="vcard5"
-                          :elevation="hover ? 12 : 2"
-                          height="550"
-                          class="mx-auto"
-                          max-width="600px"
-                  >
-
-
-                    <v-img
-                            class="black--text"
-                            height="400px"
-                            src="https://cdn.shopify.com/s/files/1/0727/4975/products/Big_Umbrella_LifeTek_Hillcrest_Golf_Umbrella_2048x.jpg?v=1520618406"
-                    >
-                      <v-card-title class="align-end fill-height">Umbrella</v-card-title>
-                    </v-img>
-
-                    <v-card-text>
-                      <span>Price: Money</span><br>
-                      <span class="text--primary">
-                    <span>Good for rain!</span><br>
-                    <span>Timeless design assures absolute satisfaction</span>
-                  </span>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Add to Cart
-                      </v-btn>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col>
-                <v-col cols="12" md="4"><v-hover id="hover6"
-                        v-slot:default="{ hover }"
-                        :open-delay="openDelay"
-                        :close-delay="closeDelay"
-                        :disabled="disabled"
-                        :value="value"
-                >
-                  <v-card id="vcard6"
-                          :elevation="hover ? 12 : 2"
-                          height="550"
-                          class="mx-auto"
-                          max-width="600px"
-                  >
-
-
-                    <v-img
-                            class="black--text"
-                            height="400px"
-                            src="https://cdn.shopify.com/s/files/1/0727/4975/products/Big_Umbrella_LifeTek_Hillcrest_Golf_Umbrella_2048x.jpg?v=1520618406"
-                    >
-                      <v-card-title class="align-end fill-height">Umbrella</v-card-title>
-                    </v-img>
-
-                    <v-card-text>
-                      <span>Price: Money</span><br>
-                      <span class="text--primary">
-                    <span>Good for rain!</span><br>
-                    <span>Timeless design assures absolute satisfaction</span>
-                  </span>
-                    </v-card-text>
-
-                    <v-card-actions>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Add to Cart
-                      </v-btn>
-                      <v-btn
-                              text
-                              color="black"
-                      >
-                        Buy Now
-                      </v-btn></v-card-actions></v-card></v-hover></v-col!-->
               </v-row>
               <v-row>
                 <v-hover id="hovervid"
@@ -332,7 +201,12 @@
 </template>
 
 <script>
+  import NavBar from './NavBar'
   export default {
+      name: "Home",
+      components: {
+        NavBar
+      },
     data () {
       return {
         items: [

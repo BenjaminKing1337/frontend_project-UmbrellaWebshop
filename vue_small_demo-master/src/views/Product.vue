@@ -1,5 +1,6 @@
 <template>
     <div id="border">
+        <NavBar/>
         <div class="row">
         <div class="col-75">
             <div class="containercheckout">
@@ -105,9 +106,13 @@
 </template>
 
 <script>
+    import NavBar from './NavBar'
     export default {
-        name: "Product"
-    }
+        name: "Product",
+        components: {
+            NavBar
+        }
+    };
 </script>
 
 <style>

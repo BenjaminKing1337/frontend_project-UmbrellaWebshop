@@ -1,5 +1,6 @@
 <template>
-    <div id="app">
+    <div id="about2">
+        <NavBar/>
         <v-app>
             <v-content>
                 <v-container fluid>
@@ -65,7 +66,15 @@
         </v-app>
     </div>
 </template>
-
+<script>
+    import NavBar from './NavBar'
+    export default {
+        name: "About2",
+        components: {
+            NavBar
+        }
+    };
+</script>
 <style>
 
     #main {

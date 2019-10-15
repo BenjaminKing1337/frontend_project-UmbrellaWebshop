@@ -1,42 +1,17 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <div class="nav_container">
-        <div class="leftSide">
-          <div class="logo" onclick="location.href = '/'">
-            DROP.
-          </div>
-          <div class="nav_wrapper">
-            <div class="socials"><router-link to="/about" class="routerLink"></router-link></div>
-            <div class="socials"><router-link to="/product" class="routerLink"><i class="fas fa-shopping-cart"/></router-link></div>
-            <div class="socials"><router-link to="/" class="routerLink"><i class="fas fa-home"/></router-link></div>
-          </div>
-        </div>
-        <div class="icons">
-          <div class="socials_container">
-            <div class="socials"><i class="fab fa-instagram" onclick="window.location.href='https://www.instagram.com'"></i></div>
-            <div class="socials"><i class="fab fa-facebook" onclick="window.location.href='https://www.facebook.com'"></i></div>
-            <div class="socials"><i class="fab fa-youtube" onclick="window.location.href='https://www.youtube.com'"></i></div>
-          </div>
-
-        </div>
-      </div>
-      <div class="logo_bar">
-        <img class="imglogo" src="./assets/72122682_483140439206927_1006645943686135808_n.png" height="250" >
-      </div>
-    </div>
+    <div>
     <router-view/>
+  </div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
-  components: {},
-  data: () => ({
-    //
-  }),
-};
+  export default {
+    name: "App",
+    components: {
+    }
+  };
 </script>
 
 <style>
@@ -46,6 +21,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    min-height: 100vh;
   }
   .routerLink{
     color: white;
